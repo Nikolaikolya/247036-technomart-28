@@ -1,12 +1,163 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  </body>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <title>Интернет-магазин Техномарт</title>
+</head>
+
+<body class="page__body">
+
+  <header class="header">
+    <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
+    <div class="header-top-line">
+      <div class="container">
+        <div class="header-top">
+          <a class="logo" href>
+            <img src="img/header/logo.png" width="108" height="18" alt="Логотип компании Техномарт">
+          </a>
+
+          <p class="search-wrapper">
+            <input class="search" type="text" name="search" id="search" placeholder="Поиск:" autocomplete="off">
+          </p>
+
+          <a class="bookmarks" href="blank.html">
+            Закладки: <span class="bookmarks-number">0</span>
+          </a>
+
+          <a class="cart" href="blank.html">
+            Корзина: <span class="cart-number">0</span>
+          </a>
+
+          <a class="button button--green" href="blank.html">Оформить заказ</a>
+        </div>
+
+        <div class="header-info">
+          <p class="header-info__title">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
+
+          <div class="header-info__information">
+            <a class="header-info__telephone" href="tel:+78125550555">
+              <span>+7 (812) 555-05-55</span>
+            </a>
+            <p class="header-info__adress">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+          </div>
+
+          <ul class="header-user">
+            <li class="header-user__item">
+              <a class="header-user__link-login" href="blank.html">Войти</a>
+            </li>
+            <li class="header-user__item">
+              <a class="header-user__link-registration" href="blank.html">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="blank.html">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="blank.html">Компания</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="blank.html">Каталог</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="blank.html">Новости</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="blank.html">Спецпредложения</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="blank.html">Доставка</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <section class="categories">
+        <h2 class="visually-hidden">Список категорий товаров</h2>
+
+        <ul class="list-categories">
+          <li class="list-categories__item list-categories__item--orange new">
+            <h3 class="list-categories__title">Материалы</h3>
+            <a href="" class="list-categories__link">На любой вкус</a>
+          </li>
+          <li class="list-categories__item list-categories__title--blue">
+            <h3 class="list-categories__title">Инструмент</h3>
+            <a href="" class="list-categories__link">На все случаи</a>
+          </li>
+          <li class="list-categories__item list-categories__title--pink">
+            <h3 class="list-categories__title">Техника</h3>
+            <a href="" class="list-categories__link">Для стройки</a>
+          </li>
+          <li class="list-categories__item list-categories__title--green">
+            <h3 class="list-categories__title">Скидки 50%</h3>
+            <a href="" class="list-categories__link">На 350 товаров</a>
+          </li>
+          <li class="list-categories__item list-categories__title--yellow">
+            <h3 class="list-categories__title">Доставка</h3>
+            <a href="" class="list-categories__link">Бесплатно</a>
+          </li>
+        </ul>
+
+        <div class="slider">
+          <ul class="slider-list">
+            <li class="slider-list__item slider-list__item--active">
+              <div class="slider-list__header">
+                <h3 class="slider-list__title">Перфораторы</h3>
+                <p class="slider-list__subtitle">Настоящие мужские игрушки</p>
+              </div>
+
+              <img class="slider-list__background" src="img/header/slider_img-1.jpg" width="620" height="266" alt="Мужчина сверлит перфаратором стену">
+
+              <a class="slider__link-open" class="" href="catalog.html">Открыть каталог</a>
+            </li>
+
+            <li class="slider-list__item">
+              <div class="slider-list__header">
+                <h3 class="slider-list__title">Дрели</h3>
+                <p class="slider-list__subtitle">Соседям на радость!</p>
+              </div>
+
+              <img class="slider-list__background" src="img/header/slider_img-2.jpg" width="620" height="266" alt="Мужчина сверлит перфаратором стену">
+
+              <a class="slider__link-open" class="" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
+
+          <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий слайд"></button>
+          <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"></button>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Footer</p>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
 </html>
