@@ -22,7 +22,7 @@
     <div class="header-top-line">
       <div class="container">
         <div class="header-top">
-          <a class="logo" href>
+          <a class="logo">
             <img src="img/header/logo.png" width="108" height="18" alt="Логотип компании Техномарт">
           </a>
 
@@ -38,7 +38,7 @@
             Корзина: <span class="cart-number">0</span>
           </a>
 
-          <a class="button button--green" href="blank.html">Оформить заказ</a>
+          <a class="button button--small button--green" href="blank.html">Оформить заказ</a>
         </div>
 
         <div class="header-info">
@@ -91,66 +91,224 @@
   </header>
 
   <main class="main">
-    <div class="container">
 
-      <section class="categories">
-        <h2 class="visually-hidden">Список категорий товаров</h2>
+    <section class="categories">
+      <h2 class="visually-hidden">Список категорий товаров</h2>
 
-        <ul class="list-categories">
-          <li class="list-categories__item list-categories__item--orange new">
-            <h3 class="list-categories__title">Материалы</h3>
-            <a href="" class="list-categories__link">На любой вкус</a>
+      <ul class="list-categories">
+        <li class="list-categories__item list-categories__item--orange new">
+          <h3 class="list-categories__title">Материалы</h3>
+          <a href="" class="list-categories__link">На любой вкус</a>
+        </li>
+        <li class="list-categories__item list-categories__title--blue">
+          <h3 class="list-categories__title">Инструмент</h3>
+          <a href="" class="list-categories__link">На все случаи</a>
+        </li>
+        <li class="list-categories__item list-categories__title--pink">
+          <h3 class="list-categories__title">Техника</h3>
+          <a href="" class="list-categories__link">Для стройки</a>
+        </li>
+        <li class="list-categories__item list-categories__title--green">
+          <h3 class="list-categories__title">Скидки 50%</h3>
+          <a href="" class="list-categories__link">На 350 товаров</a>
+        </li>
+        <li class="list-categories__item list-categories__title--yellow">
+          <h3 class="list-categories__title">Доставка</h3>
+          <a href="" class="list-categories__link">Бесплатно</a>
+        </li>
+      </ul>
+
+      <div class="slider">
+        <ul class="slider-list">
+          <li class="slider-list__item slider-list__item--active">
+            <div class="slider-list__header">
+              <h3 class="slider-list__title">Перфораторы</h3>
+              <p class="slider-list__subtitle">Настоящие мужские игрушки</p>
+            </div>
+
+            <img class="slider-list__background" src="img/header/slider_img-1.jpg" width="620" height="266"
+              alt="Мужчина сверлит перфаратором стену">
+
+            <a class="button-content slider__link-open" href="catalog.html">Открыть каталог</a>
           </li>
-          <li class="list-categories__item list-categories__title--blue">
-            <h3 class="list-categories__title">Инструмент</h3>
-            <a href="" class="list-categories__link">На все случаи</a>
-          </li>
-          <li class="list-categories__item list-categories__title--pink">
-            <h3 class="list-categories__title">Техника</h3>
-            <a href="" class="list-categories__link">Для стройки</a>
-          </li>
-          <li class="list-categories__item list-categories__title--green">
-            <h3 class="list-categories__title">Скидки 50%</h3>
-            <a href="" class="list-categories__link">На 350 товаров</a>
-          </li>
-          <li class="list-categories__item list-categories__title--yellow">
-            <h3 class="list-categories__title">Доставка</h3>
-            <a href="" class="list-categories__link">Бесплатно</a>
+
+          <li class="slider-list__item">
+            <div class="slider-list__header">
+              <h3 class="slider-list__title">Дрели</h3>
+              <p class="slider-list__subtitle">Соседям на радость!</p>
+            </div>
+
+            <img class="slider-list__background" src="img/header/slider_img-2.jpg" width="620" height="266"
+              alt="Мужчина сверлит перфаратором стену">
+
+            <a class="button-content slider__link-open" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
 
-        <div class="slider">
-          <ul class="slider-list">
-            <li class="slider-list__item slider-list__item--active">
-              <div class="slider-list__header">
-                <h3 class="slider-list__title">Перфораторы</h3>
-                <p class="slider-list__subtitle">Настоящие мужские игрушки</p>
-              </div>
+        <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий слайд"></button>
+        <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"></button>
+      </div>
 
-              <img class="slider-list__background" src="img/header/slider_img-1.jpg" width="620" height="266" alt="Мужчина сверлит перфаратором стену">
+    </section>
 
-              <a class="slider__link-open" class="" href="catalog.html">Открыть каталог</a>
+    <section class="popular popular-product">
+      <header class="popular-header">
+        <h2 class="popular-header__title">Популярные товары:</h2>
+        <a class="button-content popular-header__link" href="blank.html">Все популярные товары</a>
+      </header>
+
+      <ul class="popular-list-product">
+        <li class="popular-list-product__item" tabindex="0">
+          <article class="card border">
+            <img class="card__image" src="img/header/product-1.jpg" width="184" height="164" alt="Перфоратор фирмы Бош">
+            <h3 class="card__title">Перфоратор BOSCH<br>BFG 9000</h3>
+            <del class="card__past-price">32500 Р.</del>
+            <span class="card__price">25500 Р.</span>
+
+            <div class="card-button" tabindex="0">
+              <a class="card-button__link" href="blank.html">Купить</a>
+              <button class="card-button__button" type="button">В закладки</button>
+            </div>
+          </article>
+        </li>
+
+        <li class="popular-list-product__item new" tabindex="0">
+          <article class="card border">
+            <img class="card__image" src="img/header/product-2.jpg" width="127" height="112" alt="Перфоратор фирмы Бош">
+            <h3 class="card__title">Перфоратор BOSCH<br>BFG 9000</h3>
+            <del class="card__past-price">32500 Р.</del>
+            <span class="card__price">25500 Р.</span>
+
+            <div class="card-button">
+              <a class="card-button__link" href="blank.html">Купить</a>
+              <button class="card-button__button" type="button">В закладки</button>
+            </div>
+          </article>
+        </li>
+
+        <li class="popular-list-product__item" tabindex="0">
+          <article class="card border">
+            <img class="card__image" src="img/header/product-3.jpg" width="144" height="128" alt="Перфоратор фирмы Бош">
+            <h3 class="card__title">Перфоратор BOSCH<br>BFG 9000</h3>
+            <del class="card__past-price">32500 Р.</del>
+            <span class="card__price">25500 Р.</span>
+
+            <div class="card-button">
+              <a class="card-button__link" href="blank.html">Купить</a>
+              <button class="card-button__button" type="button">В закладки</button>
+            </div>
+          </article>
+        </li>
+
+        <li class="popular-list-product__item new" tabindex="0">
+          <article class="card border">
+            <img class="card__image" src="img/header/product-2.jpg" width="127" height="112" alt="Перфоратор фирмы Бош">
+            <h3 class="card__title">Перфоратор BOSCH<br>BFG 9000</h3>
+            <del class="card__past-price">32500 Р.</del>
+            <span class="card__price">25500 Р.</span>
+
+            <div class="card-button">
+              <a class="card-button__link" href="blank.html">Купить</a>
+              <button class="card-button__button" type="button">В закладки</button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="popular popular-producer">
+      <header class="popular-header">
+        <h2 class="popular-header__title">Популярные производители:</h2>
+        <a class="button-content popular-header__link" href="blank.html">Все производители</a>
+      </header>
+
+      <ul class="popular-producer__list">
+        <li class="popular-producer__item border">
+          <a class="popular-producer__link" href="blank.html">
+            <img class="popular-producer__image" src="img/header/producer-1.png" width="126" height="37"
+              alt="Логотип компании Бош">
+          </a>
+        </li>
+        <li class="popular-producer__item border">
+          <a class="popular-producer__link" href="blank.html">
+            <img class="popular-producer__image" src="img/header/producer-2.png" width="123" height="40"
+              alt="Логотип компании Макита">
+          </a>
+        </li>
+        <li class="popular-producer__item border">
+          <a class="popular-producer__link" href="blank.html">
+            <img class="popular-producer__image" src="img/header/producer-3.png" width="146" height="44"
+              alt="Логотип компании Деволт">
+          </a>
+        </li>
+        <li class="popular-producer__item border">
+          <a class="popular-producer__link" href="blank.html">
+            <img class="popular-producer__image" src="img/header/producer-4.png" width="200" height="88"
+              alt="Логотип компании Интеркол">
+          </a>
+        </li>
+        <li class="popular-producer__item border">
+          <a class="popular-producer__link" href="blank.html">
+            <img class="popular-producer__image" src="img/header/producer-5.png" width="169" height="31"
+              alt="Логотип компании Хитачи">
+          </a>
+        </li>
+        <li class="popular-producer__item border">
+          <a class="popular-producer__link" href="blank.html">
+            <img class="popular-producer__image" src="img/header/producer-6.png" width="121" height="73"
+              alt="Логотип компании Элджи">
+          </a>
+        </li>
+        <li class="popular-producer__item border">
+          <a class="popular-producer__link" href="blank.html">
+            <img class="popular-producer__image" src="img/header/producer-7.png" width="151" height="96"
+              alt="Логотип компании Аек">
+          </a>
+        </li>
+        <li class="popular-producer__item border">
+          <a class="popular-producer__link" href="blank.html">
+            <img class="popular-producer__image" src="img/header/producer-8.png" width="204" height="69"
+              alt="Логотип компании Метабо">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="services-wrapper">
+      <section class="services">
+        <h2 class="services__title">Сервисы</h2>
+        <p class="services__subtitle">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+
+        <div class="services-slider">
+          <ul class="services-slider__list-button">
+            <li class="services-slider__item-button">
+              <button class="services-slider__button" type="button">Доставка</button>
             </li>
-
-            <li class="slider-list__item">
-              <div class="slider-list__header">
-                <h3 class="slider-list__title">Дрели</h3>
-                <p class="slider-list__subtitle">Соседям на радость!</p>
-              </div>
-
-              <img class="slider-list__background" src="img/header/slider_img-2.jpg" width="620" height="266" alt="Мужчина сверлит перфаратором стену">
-
-              <a class="slider__link-open" class="" href="catalog.html">Открыть каталог</a>
+            <li class="services-slider__item-button">
+              <button class="services-slider__button" type="button">Гарантия</button>
+            </li>
+            <li class="services-slider__item-button">
+              <button class="services-slider__button" type="button">Кредит</button>
             </li>
           </ul>
-
-          <button class="slider__button slider__button--prev" type="button" aria-label="Предыдущий слайд"></button>
-          <button class="slider__button slider__button--next" type="button" aria-label="Следующий слайд"></button>
+          <ul class="services-slider__list-content">
+            <li class="services-slider__item">
+              <div class="services-slider__content">
+                <h3 class="services-slider__title">Доставка</h3>
+                <p class="services-slider__subtitle">Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем, <br>
+                  поднимая его на ваш этаж!</p>
+              </div>
+              <img class="services-slider__images" src="img/header/slider-1.png" alt="">
+            </li>
+          </ul>
         </div>
-
       </section>
-
     </div>
+
   </main>
 
   <footer class="footer">
